@@ -4,19 +4,30 @@
 
 	<meta charset="UTF-8">
 	<title>4-4</title>
-	<link href="style.css" rel="stylesheet">	
+	<link href="style.css" rel="stylesheet">	  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
 
 </head>
 <body>
 
-<div class="info">
-
-
+<div class="live">
+LIVE:<br>
+USD:<br><br>1<br><br>
+TWD:
 </div>
 
-<script type="text/javascript" src="oauth.js"></script>
-<script type="text/javascript" src="sha1.js"></script>
+<div class="historical"><br><p>
+<div class="datepicker"></div>
+HISTORICAL:</p>
+<p>Date: <form id="input"><input type="text" id="datepicker"></form></p>
+
+USD: <br><br>1<br><br>
+TWD: <div class="histrate"></div>
+</div>
+
+
 <script src="jquery-2.2.1.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
