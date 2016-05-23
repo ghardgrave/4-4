@@ -5,26 +5,30 @@
 	<meta charset="UTF-8">
 	<title>4-4</title>
 	<link href="style.css" rel="stylesheet">	  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-
+<link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
 
 </head>
 <body>
+<div class="container">
+<h1>US Dollar to Taiwan Dollar<br>Exchange Rate Comparison Tool</h1>
 
 <div class="live">
-LIVE:<br>
-USD:<br><br>1<br><br>
-TWD:
+<h2>Current Rate</h2>
+<img src="images/usf.png" width=44 style="margin-top: -19px; display: inline-block">$1.00<br><br>
+<img src="images/twf.png" width=50>NT$
+</div>
+<br>
+<div class="historical">
+<h2>Historical Rate</h2>
+<form id="input" style="margin-top: -10px"><input type="text" id="datepicker" placeholder="Choose a Date:"></form>
+
+<img src="images/usf.png" width=44 style="padding-top: 10px; display: inline-block">$1.00<br><br>
+<img src="images/twf.png" width=50 style="display: inline-block">
+<div id="histrate"></div>
 </div>
 
-<div class="historical"><br><p>
-<div class="datepicker"></div>
-HISTORICAL:</p>
-<p>Date: <form id="input"><input type="text" id="datepicker"></form></p>
 
-USD: <br><br>1<br><br>
-TWD: <div class="histrate"></div>
 </div>
-
 
 <script src="jquery-2.2.1.js"></script>
   <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>

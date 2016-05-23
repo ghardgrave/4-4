@@ -1,3 +1,72 @@
-body {
+html {
+margin: 0;
+padding: 0;
+height: 100%;
 }
 
+body {
+background-color: black;
+padding: 0;
+margin: 0;
+overflow-y: hidden;
+font-family: 'Questrial', sans-serif;
+}
+
+h1 {
+position: relative;
+top: 25px;
+font-weight: bolder;
+font-size: 42px;
+
+}
+
+
+h2 {
+font-weight: bold;
+font-size: 36px;
+}
+.container {
+	margin: -1.8rem auto 0;
+height: 100vh;
+		text-align : center;
+
+	width: 794px;
+	background-image: url('images/bg.jpg');
+	background-repeat: no-repeat;
+
+}
+
+#datepicker {
+font-family: 'Questrial', sans-serif;
+font-size: 18px;
+width: 45%;
+}
+
+.live {
+	margin-top: 10px;
+	height: 13rem;
+width: 40%;
+border-radius: 25px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.85;    
+  padding: 0 0 25px 0; 
+display: inline-block;
+}
+
+.historical {
+margin-top: 15px;
+		height: 16rem;
+width: 40%;
+border-radius: 25px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.85;    
+  padding: 0 0 15px 0; 
+display: inline-block;
+}
+
+#histrate {
+display: inline-block;
+
+}

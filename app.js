@@ -2,9 +2,10 @@
 $(function(){
 
 
-/* displays current exchange*/
+/* displays current exchange rate*/
 showLive();
   
+/* picks date and returns historical exchange rate   */  
 $('#datepicker').datepicker({
     dateFormat: "yy-mm-dd",
     inline : true,
@@ -23,16 +24,13 @@ $('#datepicker').datepicker({
 
 
 function showLive(){
-// set endpoint and your access key
 
-
-// get the most recent exchange rates via the "live" endpoint:
   $.ajax({
     url: 'http://apilayer.net/api/live?access_key=bd09618e70168a850cdd4823ad353816',   
     dataType: 'jsonp',
     success: function(json) {
 
-    $(".live").append("<p>"+json.quotes.USDTWD+"</p>");
+    $(".live").append(" "+json.quotes.USDTWD.toFixed(2));
 
     }
   });
@@ -47,14 +45,9 @@ $.ajax({
     dataType: 'jsonp',
     success: function(json) {
 
-    $(".histrate").html("<p>"+json.quotes.USDTWD+"</p>");
+    $("#histrate").html("<p>NT$ "+json.quotes.USDTWD.toFixed(2)+"</p>");
 
         
     }
 })
 }           
-
-function showResults(results){
- 
-}
-
